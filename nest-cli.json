@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "compilerOptions": {
+    "builder": "swc",
+    "typeCheck": true,
+    "deleteOutDir": true,
+    "webpack": false
+  },
+  "projects": {
+    "sms": {
+      "type": "library",
+      "root": "libs/sms",
+      "entryFile": "index",
+      "sourceRoot": "libs/sms/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/sms/tsconfig.lib.json"
+      }
+    }
+  }
+}
